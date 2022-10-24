@@ -1,0 +1,19 @@
+<footer>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 mt-2">
+      <div class="col" *ngFor="let item of footerItems">
+        <div class="p-1">
+          <a class="nav-link title">{{ item.title }}</a>
+        </div>
+        <div class="p-1" *ngFor="let subItem of item.subItems">
+          <a class="nav-link">{{ subItem }}</a>
+        </div>
+      </div>
+    </div>
+    <div class="row ow-cols-12 g-3 p-3">
+      <div class="col">
+        <div class="d-flex justify-content-center"> <img src="../../assets/Logo.svg" /></div>
+      </div>
+    </div>
+  </div>
+</footer>

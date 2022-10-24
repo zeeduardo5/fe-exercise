@@ -1,0 +1,11 @@
+<div class="card" *ngIf="card">
+  <div class="detail-img h-25">
+    <img src="{{ card?.avatar }}" alt="..." />
+  </div>
+  <div class="card-body h-75">
+    <h3 class="card-title">{{ card?.name }}</h3>
+    <p class="card-text">
+      {{ card?.type }}
+    </p>
+  </div>
+</div>

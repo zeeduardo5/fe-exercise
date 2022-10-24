@@ -1,0 +1,25 @@
+footer {
+  background-color: #27303e;
+  color: #ffffff;
+  padding-top:20px;
+  position: sticky;
+  top: 100vh;
+}
+
+
+a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: #aab0b4;
+  cursor: pointer;
+
+  &.title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    cursor: text;
+  }
+}

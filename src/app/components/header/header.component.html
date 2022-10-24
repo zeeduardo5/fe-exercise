@@ -1,0 +1,29 @@
+<nav class="navbar navbar-dark bg-custom navbar-expand-sm header-border">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler ms-auto collapsed mb-4"
+      type="button"
+      (click)="isCollapsed = !isCollapsed"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+     
+    </button>
+    <div
+      class="collapse navbar-collapse"
+      [collapse]="isCollapsed"
+      id="navbarNav"
+    >
+      <ul class="navbar-nav mx-auto" *ngIf="headerItems">
+        <ng-container *ngFor="let item of headerItems">
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" [routerLink]="item.routerLink">{{
+              item.name
+            }}</a>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+  </div>
+</nav>

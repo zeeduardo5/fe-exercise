@@ -1,0 +1,13 @@
+<div
+  class="row row-cols-1 row-cols-sm-2 row-cols-md-3"
+  *ngIf="items$ | async as items"
+>
+  <div class="col" *ngFor="let item of items">
+    <app-card [card]="item" (clickCardEvent)="click($event)"></app-card>
+  </div>
+</div>
+<div class="d-grid gap-2 col-2 mx-auto mt-3 mb-5">
+  <button class="btn btn-primary float" type="button" (click)="update()" >
+    Update
+  </button>
+</div>

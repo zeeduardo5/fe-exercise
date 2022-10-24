@@ -1,0 +1,17 @@
+.btn {
+  background: #00cccc;
+  border-radius: 100px;
+  border: none;
+  align-items: center;
+
+}
+
+.float {
+
+  @media only screen and (max-width: 578px) {
+    bottom: 40px;
+    position: fixed;
+    right: 5%;
+    left: 60%;
+  }
+}

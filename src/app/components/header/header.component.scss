@@ -1,0 +1,26 @@
+.bg-custom {
+    background: linear-gradient(88.96deg, #00cccc 4.35%, #0098c8 96.43%);
+   
+}
+
+
+.header-border {
+    @media only screen and (min-width: 578px) {
+      border-radius: 70% / 0 0 100% 100%;
+      height: 100px;
+    }
+}
+
+ul {
+    margin-top: -25px;
+}
+
+
+.nav-item {
+    &.active {
+      a {
+        color: #ffffff;
+        font-weight: 600;
+      }
+    }
+  }

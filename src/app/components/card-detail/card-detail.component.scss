@@ -1,0 +1,28 @@
+.card {
+    border-radius: 16px;
+    height: 700px
+  }
+  
+  .card-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+  }
+  
+  .card-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: #6e798c;
+  }
+  
+  .detail-img {
+    overflow-y: hidden;
+    position: relative;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    img {
+      width: 100%;
+    }
+  }
+  

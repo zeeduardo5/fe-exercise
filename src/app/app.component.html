@@ -1,0 +1,13 @@
+<app-header [headerItems]="headerItems"></app-header>
+<div class="container-fluid">
+    <router-outlet (activate)="onActivate($event)"></router-outlet>
+  
+<!-- 
+      <div class="d-grid col-2 mx-auto">
+        <button class="btn btn-primary" type="button">
+          Update
+        </button>
+      </div> -->
+</div>
+
+<app-footer [footerItems]="footerItems"></app-footer>
